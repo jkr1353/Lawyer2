@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@color/colorScheme1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="@color/colorScheme1"
+		android:id="@+id/linearLayout1"
+		android:orientation="horizontal">
+		
+		<ListView
+		    android:id="@android:id/list"
+		    android:background="@color/colorScheme2"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+		</ListView>
+		
+	</LinearLayout>
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/menuBar"
+	    android:layout_gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:layout_alignParentBottom="true">
+		
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center_vertical"
+			android:layout_gravity="center_vertical"
+			android:layout_alignParentRight="true"
+			android:text="New Case"
+			android:id="@+id/buttonAdd"
+			android:onClick="onMyButtonClick">
+		    
+		</Button>
+		
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center_vertical"
+			android:layout_gravity="center_vertical"
+			android:layout_alignParentLeft="true"
+			android:text="Delete Case"
+			android:id="@+id/buttonDelete"
+			android:onClick="onMyButtonClick">
+		    
+		</Button>
+		
+	</RelativeLayout>
+
+</RelativeLayout>

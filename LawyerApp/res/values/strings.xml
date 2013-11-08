@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lawyers Companion</string>
+    <string name="action_settings">Settings</string>
+    <string name="recentContacts">Contacts:</string>
+    <string name="recentDocs">Files:</string>
+    <string name="recentTimeLogs">Logs:</string>
+    <string name="newcasebutton">Create New Case</string>
+    <string name="record_title_str">Title</string>
+    <string name="lastaccessed"> Date Last Accessed: </string>
+    <string name="record_date_str_hint">this is where the date will be displayed</string>
+    <string name="new_case_name">New Case Name</string>
+    <string name="create_case">Create Case</string>
+    <string name="cancel">Cancel</string>
+    <string name="album_name">CameraSample</string>
+    <string name="btnIntend">Take Picture</string>
+    <string name="cannot">Cannot</string>
+    
+
+</resources>

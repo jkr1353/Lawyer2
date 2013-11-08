@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:inputType="text"
+			android:imeOptions="actionDone"
+			android:id="@+id/eTextNote"
+			android:hint="Enter Case Name"
+			/>
+	<EditText 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:inputType="text"
+			android:id="@+id/eTextType"
+			android:hint="Enter Case Type"
+		    />
+
+	<ExpandableListView
+	    android:id="@+id/expandableListView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:name="ListView" >
+	</ExpandableListView>
+   
+</LinearLayout>

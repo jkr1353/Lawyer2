@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="@color/colorScheme1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorScheme1"
+    	android:padding="10dp" >
+
+   
+    
+	    <Button
+	        android:id="@+id/Title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Title"
+	        android:gravity="center"
+	        android:textSize="@dimen/font_size_name"
+	        android:background="@color/colorScheme2"
+	        />
+
+   
+	    
+	<LinearLayout
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+        
+	    <EditText
+	        android:id="@+id/editTitle"
+	        android:gravity="center_horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	    
+	</LinearLayout>   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+	    
+        
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp"
+            >
+            <Button
+                android:id="@+id/recentContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recentContacts"
+                android:gravity="center"
+                android:background="@color/colorScheme2" />
+        </LinearLayout>
+        
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp"
+            >
+            <Button
+            	android:id="@+id/recentDocs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recentDocs" 
+                android:background="@color/colorScheme2"
+                android:gravity="center"/>
+        </LinearLayout>
+
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            >
+            <Button
+                android:id="@+id/recentTimeLogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recentTimeLogs"
+                android:gravity="center"
+                android:background="@color/colorScheme2" />
+        </LinearLayout>   
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tabfrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        >
+        
+    </LinearLayout>
+	    
+    
+	   
+        
+</LinearLayout>
+
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/menuBar"
+	    android:layout_gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:layout_alignParentBottom="true">
+		
+    	<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="Delete Case"
+			android:id="@+id/buttonDelete"
+			android:onClick="onMyButtonClick">
+		</Button>
+    
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="New Expense"
+			android:id="@+id/buttonNewExpense"
+			android:onClick="onMyButtonClick">
+		    
+		</Button>
+		
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="New Mileage"
+			android:id="@+id/buttonNewMileage"
+			android:onClick="onMyButtonClick">
+		    
+		</Button>    
+    
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="New Hours"
+			android:id="@+id/buttonNewHours"
+			android:onClick="onMyButtonClick">
+		    
+		</Button>
+		    
+		
+	</LinearLayout>
+	
+</RelativeLayout>

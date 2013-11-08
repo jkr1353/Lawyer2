@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    
+    <EditText
+        android:gravity="center"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:inputType="text"
+		android:imeOptions="actionDone"
+		android:id="@+id/editTextName"
+		/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+	    <TextView
+	        android:id="@+id/textViewName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Mileage: " />
+	    
+		<EditText 
+	    	android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:inputType="number"
+			android:id="@+id/editTextValue"
+		    />
+	
+	</LinearLayout>
+	
+	<EditText
+	    android:gravity="center"
+	    android:id="@+id/editTextNote"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textMultiLine"
+	    />
+   
+</LinearLayout>

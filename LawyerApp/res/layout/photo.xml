@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menuBar">
+    
+	<LinearLayout 
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:padding="10dp"
+	android:gravity="center"
+	android:orientation="vertical">
+   
+	    <EditText
+	        android:id="@+id/photoName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:hint="Name of Photo"
+	        android:textColor="@color/colorScheme2" >
+
+	    </EditText>
+	    
+	    <Button 
+	        android:text="@string/btnIntend" 
+	        android:id="@+id/btnIntend"
+	        android:background="@color/colorScheme2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	         />
+    
+  </LinearLayout>
+  
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="300dp"
+	    >
+  <ImageView 
+      android:layout_height="wrap_content" 
+      android:layout_width="wrap_content" 
+      android:visibility="visible"
+      android:layout_gravity="center"
+      android:id="@+id/imageView1" />
+  
+  </LinearLayout>
+  
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      >
+      
+      <Button 
+          android:id="@+id/savePhoto"
+          android:layout_width="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentBottom="true"
+          android:layout_height="wrap_content"
+          android:text="Save image"
+          />
+      
+  </RelativeLayout>
+  
+</LinearLayout>
